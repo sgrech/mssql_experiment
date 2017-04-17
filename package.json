@@ -1,0 +1,42 @@
+{
+  "name": "mssql_experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
+    "start": "nodemon src/server.js",
+    "lint": "esw src tools --color"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgrech/mssql_experiment.git"
+  },
+  "keywords": [
+    "mssql",
+    "experiment"
+  ],
+  "author": "Shane Grech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgrech/mssql_experiment/issues"
+  },
+  "homepage": "https://github.com/sgrech/mssql_experiment#readme",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.5",
+    "morgan": "^1.8.1",
+    "mssql": "^4.0.1",
+    "tedious": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-watch": "^3.1.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
+  }
+}
